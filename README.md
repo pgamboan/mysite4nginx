@@ -72,7 +72,3 @@ Sometimes, Hot Module Reload may stop working during development. To resolve thi
 This project is licensed under the MIT License.
 
 ---
-
-## Contact Me
-
-You can find my website [here](https://www.pixelrocket.store) with more frontend web developer resources and tutorials or you can email me at support@pixelrocket.store
