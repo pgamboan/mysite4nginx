@@ -1,6 +1,8 @@
-# Personal Portfolio HTML Tailwind Template
+# Personal Portfolio HTML Tailwind
 
-This is a single-page website template designed to showcase your portfolio in a clean and professional way. Built using TailwindCSS Version 4, Vite as the build tool, and Handlebar.js as the template engine, it’s lightweight, responsive, and fully customizable. In addition, the template supports light and dark mode and uses CSS scroll animations (only in browsers that support animate-timeline).
+This is a personal portfolio website built as part of my DevOps course, aimed at showcasing my skills, projects, and achievements in the field of software development and operations. Designed with simplicity, clarity, and user experience in mind, this portfolio reflects my journey in the world of DevOps and web development. It is fully optimized for deployment on an Nginx server, serving as both a demonstration of my technical abilities and a showcase of the work I've done in the realm of automation, infrastructure, and continuous integration/continuous deployment (CI/CD) pipelines.
+
+This portfolio uses cutting-edge technologies to ensure a seamless and modern experience. The site is built using TailwindCSS Version 4 for responsive design, Vite as the build tool for fast and efficient bundling, and Handlebars.js as the template engine to provide flexibility and easy management of content. Additionally, the website supports both light and dark mode, enhancing the user experience across different preferences. For smooth interactions, CSS scroll animations are incorporated, making it visually appealing in modern browsers that support animate-timeline.
 
 ## App Preview
 
