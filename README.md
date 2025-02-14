@@ -4,26 +4,6 @@ This is a personal portfolio website built as part of my DevOps course, aimed at
 
 This portfolio uses cutting-edge technologies to ensure a seamless and modern experience. The site is built using TailwindCSS Version 4 for responsive design, Vite as the build tool for fast and efficient bundling, and Handlebars.js as the template engine to provide flexibility and easy management of content. 
 
-## App Preview
-
-[![Live Demo](https://img.shields.io/badge/Live_Demo-Visit-brightgreen?style=for-the-badge)](https://personal-portfolio-html-tailwind.vercel.app)
-
-[![Tailwind Version 4 HTML Personal Portfolio Template](https://github.com/PixelRocket-Shop/personal-portfolio-html-tailwind/blob/main/public/images/preview.png 'Tailwind Version 4 HTML Personal Portfolio Template')](https://personal-portfolio-html-tailwind.vercel.app)
-
----
-
-## Features
-
-- **Responsive Design**: Optimized for all devices.
-- **Dark mode**: Light and dark mode support.
-- **Easy Customization**: Modify styles and content effortlessly.
-- **Built with TailwindCSS**: Fast and flexible utility-first CSS.
-- **Swiper.js Integration**: Add smooth carousels and sliders.
-- **Handlebars Templating**: Manage reusable components efficiently.
-- **Hot Module Reload**: Speed up development.
-- **JSON Files for dynamic data**: Use the JSON files in the data folder to customise the content.
-
----
 
 ## Installation & Usage
 
