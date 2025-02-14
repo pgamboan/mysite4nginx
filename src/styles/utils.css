@@ -1,0 +1,85 @@
+@layer utilities {
+  .animated-border {
+    @apply rounded-full bg-white dark:bg-gray-200 dark:text-gray-950 border flex px-3 py-2 font-semibold text-sm mx-auto relative;
+  }
+
+  @property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+  }
+
+  .animated-border::after {
+    @apply absolute h-full w-[102.5%] z-[-1] p-5 rounded-full;
+    content: '';
+    background-image: conic-gradient(
+      from var(--angle),
+      transparent 60%,
+      var(--color-green-500)
+    );
+    inset: -2px;
+    animation: 2s infinite rotate linear;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .animated-border::after {
+      background-image: conic-gradient(
+        from var(--angle),
+        transparent 90%,
+        var(--color-green-200)
+      );
+    }
+  }
+
+  @keyframes rotate {
+    0% {
+      --angle: 0deg;
+    }
+    100% {
+      --angle: 360deg;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .dotted-side-borders {
+      @apply relative;
+    }
+
+    .dotted-side-borders::before,
+    .dotted-side-borders::after {
+      @apply absolute w-[1px] top-0 bottom-0 right-0;
+      content: '';
+      background-image: linear-gradient(
+        to bottom,
+        var(--color-gray-200),
+        transparent 90%
+      );
+      background-size: 90% 10px;
+      mask-image: linear-gradient(
+        to bottom,
+        transparent 20%,
+        var(--color-gray-200)
+      );
+    }
+
+    .dotted-side-borders::before {
+      @apply right-auto left-0;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .dotted-side-borders::before,
+      .dotted-side-borders::after {
+        background-image: linear-gradient(
+          to bottom,
+          var(--color-gray-800),
+          transparent 90%
+        );
+        mask-image: linear-gradient(
+          to bottom,
+          transparent 20%,
+          var(--color-gray-800)
+        );
+      }
+    }
+  }
+}

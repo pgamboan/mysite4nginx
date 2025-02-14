@@ -1,0 +1,10 @@
+<nav class="grid not-prose">
+  <ul
+    class="flex flex-col sm:flex-row items-stretch md:items-center items-center gap-4 {{#if center }} sm:mx-auto {{ else }} {{/if}}"
+  >
+    <!-- prettier-ignore-->
+    {{#each socials}}
+        {{> socials-entry social=this }}
+      {{/each}}
+  </ul>
+</nav>

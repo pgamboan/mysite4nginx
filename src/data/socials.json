@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Twitter",
+    "icon": "x",
+    "link": "https://www.twitter.com"
+  },
+  {
+    "name": "LinkedIn",
+    "icon": "linkedin",
+    "link": "www.linkedin.com/in/pablo-gamboa-nieto-47291521a"
+  },
+  {
+    "name": "GitHub",
+    "icon": "github",
+    "link": "https://github.com/pgamboan"
+  }
+]

@@ -1,0 +1,99 @@
+<footer class="bg-gray-950 dark:border-t lg:dark:border-0">
+  <section id="contact" aria-labelledby="contact-title" class="container">
+    <div class="lg:border-x lg:border-white/25 py-20">
+      <div class="lg:max-w-screen-md mx-auto">
+        <h2
+          id="contact-title"
+          class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl text-white !mt-0"
+        >
+          Get In Touch
+        </h2>
+        <div class="grid lg:grid-cols-2 gap-20 not-prose">
+          <div class="grid gap-20">
+            <div class="grid gap-20">
+              <p class="text-2xl text-white m-0">
+                Send me a message about your project and I'll get back to you.
+              </p>
+              {{#if contact}}
+              <address
+                class="text-xl text-white/75 grid gap-10 lg:gap-6 not-italic"
+              >
+                <!--prettier-ignore-->
+                {{#each contact}} 
+                {{#if link}}
+                <a
+                  href="{{ link}}"
+                  class="leading-1 text-2xl lg:text-xl transition-colors duration-300 hover:text-white"
+                  >{{ value }}</a
+                >
+                {{else}}
+                <span class="leading-1">{{value}}</span>
+                {{/if}} {{/each}}
+              </address>
+              {{/if}}
+            </div>
+            {{> socials }}
+          </div>
+          <form
+            action="#"
+            method="POST"
+            aria-labelledby="contact-title"
+            class="grid lg:grid-cols-2 gap-10"
+          >
+            <!--prettier-ignore-->
+            {{> form-field
+            name="name"
+            label="Name"
+            placeholder="Your name"
+          }}
+            <!--prettier-ignore-->
+            {{> form-field
+              name="email"
+              label="Email"
+              placeholder="Your email"
+            }}
+            <!--prettier-ignore-->
+            {{> form-field
+            name="telephone"
+            label="Telphone"
+            placeholder="Your telephone"
+          }}
+            <!--prettier-ignore-->
+            {{> form-field
+              name="subject"
+              label="Subject"
+              placeholder="Subject"
+          }}
+            <!--prettier-ignore-->
+            {{> form-field 
+              id="message" 
+              name="message" 
+              label="Message"
+              isTextarea=true 
+              placeholder="Tell me about your project" 
+          }}
+            <div class="lg:col-span-2">
+              <button
+                type="submit"
+                class="btn btn-light mr-0 ml-auto flex w-full lg:w-auto justify-center"
+              >
+                Send Your Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="border-t border-white/25 text-sm py-10 text-center text-white/50">
+    <p>
+      &copy; 2024 All rights reserved | Made with ❤️ by
+      <a
+        class="underline text-white/50 transition-colors duration-300 hover:text-white"
+        href="https://pixelrocket.store"
+        >Pixel Rocket</a
+      >
+    </p>
+  </div>
+</footer>
+{{> mobile-menu }}

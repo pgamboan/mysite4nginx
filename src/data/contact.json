@@ -1,0 +1,16 @@
+[
+  {
+    "name": "email",
+    "value": "pgamboan@hotmail.com",
+    "link": "mailto:pgamboan@hotmail.com"
+  },
+  {
+    "name": "phone",
+    "value": "+52 999 367 8335",
+    "link": "tel:+52 9999449652"
+  },
+  {
+    "name": "address",
+    "value": "1 a bis #346 Campestre, Mid, Yuc."
+  }
+]

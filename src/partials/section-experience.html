@@ -1,0 +1,43 @@
+<section
+  id="experience"
+  aria-labelledby="experience-title"
+  class="mt-20 grid gap-12 dark:bg-gray-950"
+>
+  <a
+    href="cv.txt"
+    class="rounded-full border px-3 py-2 font-medium no-underline transition-colors duration-300 ease-in-out bg-gray-50 hover:bg-gray-950 hover:border-gray-950 hover:text-white flex justify-self-start items-center gap-2 dark:bg-gray-200 dark:text-gray-950 dark:border-gray-200 dark:hover:bg-gray-300 dark:hover:border-gray-300 dark:text-gray-950 dark:hover:text-gray-950 w-full justify-center sm:w-auto"
+    download
+  >
+    <span class="w-5 !m-0">{{> icons/download }}</span>
+    Download My CV</a
+  >
+  <h3 id="experience-title" class="text-4xl lg:text-5xl !m-0">My Experience</h3>
+  <!--prettier-ignore-->
+  {{#if timeline}}
+  <div class="not-prose">
+    {{#each timeline}}
+    <dl class="border-l pl-8 sm:pl-16 md:pl-24 pb-16 last:pb-0 relative">
+      <span
+        class="bg-gray-200 dark:bg-gray-400 w-[7px] h-[7px] rounded-full block absolute left-0 top-0 -ml-1"
+      ></span>
+      <span
+        class="uppercase text-gray-600 dark:text-gray-500 font-medium tracking-wide mb-4 block leading-[1]"
+        >{{ year }}</span
+      >
+      {{#each entries}}
+      <div class="pb-4 last:pb-0 animate-in-and-out">
+        <dt
+          class="text-2xl md:text-3xl text-gray-950 dark:text-gray-200 font-medium"
+        >
+          {{ title }}
+        </dt>
+        <dd class="text-gray-600 dark:text-gray-500 font-medium">
+          {{ company }}
+        </dd>
+      </div>
+      {{/each}}
+    </dl>
+    {{/each}}
+  </div>
+  {{/if}}
+</section>

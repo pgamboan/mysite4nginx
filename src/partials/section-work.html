@@ -1,0 +1,53 @@
+<section
+  id="work"
+  aria-labelledby="work-title"
+  class="scroll-mt-20 border-b dark:bg-gray-950"
+>
+  <div class="container">
+    <div class="lg:border-x">
+      {{> section-title id="work-title" title="Examples of my work" }}
+      <div class="grid gap-20 lg:mx-auto lg:max-w-screen-lg py-14 lg:py-20">
+        <!--prettier-ignore-->
+        {{#each work}}
+        <article>
+          <img class="animate-reveal" src="{{ image }}" alt="{{ title }}" />
+          <div class="grid md:grid-cols-2 gap-20 mt-11">
+            <div>
+              <h3 class="mt-0 text-3xl font-medium">{{ title }}</h3>
+              <p class="text-lg">{{ description }}</p>
+              <a
+                href="#"
+                class="btn mt-10 flex items-center gap-2 justify-self-start w-full justify-center sm:w-auto"
+                role="button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Website
+                <span class="w-5">{{> icons/external }}</span>
+              </a>
+            </div>
+            <div>
+              <div class="grid md:grid-cols-2 gap-6 md:gap-12 not-prose">
+                {{#each meta}}
+                <dl class="grid gap-2">
+                  <dt
+                    class="text-base font-medium text-gray-600 dark:text-gray-500 capitalize"
+                  >
+                    {{ name }}
+                  </dt>
+                  <dd
+                    class="text-xl font-medium text-gray-950 dark:text-gray-200"
+                  >
+                    {{ value }}
+                  </dd>
+                </dl>
+                {{/each}}
+              </div>
+            </div>
+          </div>
+        </article>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</section>

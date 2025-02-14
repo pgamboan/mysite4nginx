@@ -1,0 +1,38 @@
+<section
+  id="testimonials"
+  aria-labelledby="testimonials-title"
+  class="scroll-mt-20 lg:border-b dark:bg-gray-950"
+>
+  <div class="container">
+    <div class="lg:border-x">
+      {{> section-title id="testimonials-title" title="What my coworkers say" }}
+      <div class="relative pt-24 pb-16 lg:py-10">
+        <span
+          class="text-9xl text-gray-300 absolute top-2 -left-1 lg:top-5 lg:left-5"
+          >“</span
+        >
+        <div class="swiper not-prose lg:max-w-screen-md">
+          <div class="swiper-wrapper">
+            {{#each testimonials}}
+            <article
+              class="swiper-slide pb-10 lg:py-20 bg-white dark:bg-gray-950"
+            >
+              <blockquote class="grid gap-6">
+                <p
+                  class="text-2xl md:text-3xl lg:text-4xl text-gray-950 dark:text-gray-300"
+                >
+                  {{ quote }}
+                </p>
+                <cite class="text-xl font-medium text-gray-600 not-italic">
+                  {{ author }}
+                </cite>
+              </blockquote>
+            </article>
+            {{/each}}
+          </div>
+          <div class="swiper-pagination pt-10 !-bottom-2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

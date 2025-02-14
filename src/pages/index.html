@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    {{> head title="Pablo's Personal Portfolio" }}
+  </head>
+  <body class="prose prose-gray max-w-none">
+    {{> header }}
+    <main>
+      <!-- prettier-ignore -->
+      {{> section-hero }} 
+      {{> section-about }} 
+      {{> section-work }} 
+      {{> section-testimonials }}
+    </main>
+    {{> footer }}
+    <script type="module" src='{{resolve-from-root "../js/main.js"}}'></script>
+  </body>
+</html>
