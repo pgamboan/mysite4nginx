@@ -66,15 +66,6 @@ Sometimes, Hot Module Reload may stop working during development. To resolve thi
 
 ---
 
-## Credits
-
-This project utilizes the screenshots for the portfolio thumbnails the following Figma templates:
-
-1. [Design #1](https://www.figma.com/community/file/1119800724233920173)
-2. [Design #2](https://www.figma.com/community/file/1024566846450249486)
-3. [Design #3](https://www.figma.com/community/file/1160643318126575855)
-
----
 
 ## License
 
